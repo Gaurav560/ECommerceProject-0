@@ -18,17 +18,10 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
     private String name;
-
-    @Column(length = 1000)
     private String description;
-
     private String brand;
-
-    @Column(nullable = false)
     private BigDecimal price;
-
     private String category;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
